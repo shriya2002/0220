@@ -1,0 +1,2 @@
+The code is verified on online java compiler and hence scanner class was not working in online java compiler. 
+When executed on inbuilt java compiler it takes input during runtime that is the string can be given at runtime.

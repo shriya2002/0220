@@ -1,0 +1,47 @@
+import java. util. Scanner;
+public class Wrapper
+{
+	public static void main(String[] args) {
+	    //String str;
+	    //int column;
+	    // comment these lines if in case there is error till #1 and uncomment below lines
+	   // Scanner sc= new Scanner(System.in);
+	    //System.out.println("Enter a string");
+	    //str= sc.nextLine();
+	   // System.out.println("Enter column size");
+	    //column = sc.nextInt();
+	    // #1
+	String str= "myname";
+System.out.println(str);
+		int column=1;
+		
+			String sout=Wrap(str, column);
+			System.out.println(sout);
+	}
+		 static String Wrap(String str, int column){
+		     String ostr="";
+	
+		   int j =0;
+		    while(j<str.length()){
+		        
+		        for(int i= 1; i<=column;i++){
+		            
+		           try{
+		            ostr = ostr+str.charAt(j);
+		            j++;
+		           }
+		           catch(Exception e){
+                    
+		               break;
+		           }
+		        }
+		       
+		        ostr = ostr + "\n";
+		    }
+		    
+		    return ostr;
+		    
+		}
+		
+	
+}
